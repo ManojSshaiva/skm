@@ -1,0 +1,365 @@
+body {
+    font-family: "Belanosima", sans-serif;
+  }
+
+  .head {
+    display: flex;
+    flex-direction: row;
+    margin-right: 1px;
+  }
+
+  .logo {
+    height: 85px;
+    width: 100px;
+  }
+
+  .logo img {
+    width: 140px;
+    position: absolute;
+    left: 33px;
+    top: 1px;
+    font-size: 14px;
+  }
+
+  .logo span {
+    position: absolute;
+    left: 30px;
+    top: 130px;
+    font-size: 14px;
+  }
+
+  .discount {
+    justify-content: center;
+    width: 315px;
+    display: flex;
+    border-radius: 25px;
+    margin: 10px;
+    height: 145px;
+    align-items: center;
+    font-size: 20px;
+    background-color: rgb(145, 241, 241);
+    animation: offer 3s ease-in-out infinite forwards;
+    position: relative;
+  }
+
+  @keyframes offer {
+    0% {
+      background-color: rgb(237, 191, 182);
+      
+    }
+    25% {
+      background-color: rgb(237, 237, 196);
+      
+    }
+    50% {
+      background-color: rgb(201, 201, 244);
+      
+    }
+    75% {
+      background-color: rgb(203, 243, 203);
+     
+    }
+    100% {
+      background-color: rgb(232, 197, 197);
+     
+    }
+    from{width: 72%;}
+    to{width: 100%;}
+  }
+
+  .emptycenter {
+    margin: 10px;
+    width: 220px;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(210, 176, 225, 0.621);
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    border-radius: 25px;
+  }
+
+  .navigation li {
+    list-style: none;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .navigation li a {
+    text-align: center;
+    width: 127px;
+    font-size: 24px;
+    text-decoration: none;
+
+    padding: 2px;
+    border-radius: 50px;
+  }
+
+  .navigation a:hover,
+  .navigation a.active {
+    background-color: rgba(203, 159, 222, 0.621);
+    border: 1px solid black;
+  }
+
+  .navi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .callus {
+    display: flex;
+    position: fixed;
+    right: 1rem;
+    bottom: 2rem;
+    width: 75px;
+    height: 50px;
+    font-size: 0px;
+    flex-direction: column;
+    z-index: 1;
+  }
+
+  .callus img {
+    width: 65px;
+    height: 50px;
+    animation: image 1s ease-in-out  infinite forwards;
+    position: relative;
+  }
+  
+  @keyframes image {
+    0%{ transform: rotate(20deg);}
+    25%{transform: rotate(0deg);} 
+    50%{transform: rotate(20deg);}
+    75%{transform: rotate(0deg);}
+    100%{transform: rotate(20deg);}
+    
+    }
+  .callus:hover {
+    cursor: pointer;
+    font-size: 15px;
+    text-decoration: none;
+  }
+
+  .front {
+    height: 400px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #frontp {
+    margin: 0px;
+    font-size: 25px;
+  }
+
+  .front::before {
+    content: "";
+    background: url("car2.webp") no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    border-radius: 30px;
+  }
+
+  .details {
+    background-color: antiquewhite;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 9px;
+  }
+
+  .details ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .details li {
+    list-style: none;
+  }
+
+  .details01 {
+    height: 40px;
+  }
+
+  .details1 {
+    width: 64px;
+    height: 58px;
+    display: flex;
+    margin-left: 57px;
+    margin-right: 57px;
+    justify-content: center;
+    font-size: 40px;
+  }
+
+  .details2 {
+    width: 64px;
+    height: 58px;
+    display: flex;
+    margin-left: 57px;
+    margin-right: 57px;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  #services {
+    display: flex;
+    margin-left: 3px;
+    margin-right: 3px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2px;
+    padding-right: 2px;
+    flex-wrap: wrap;
+  }
+
+  .srv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: 275px;
+    height: 280px;
+    border-radius: 30px;
+    padding-top: 15px;
+  }
+
+  .srv p {
+    text-align: center;
+  }
+
+  .srv img {
+    width: 125px;
+    height: 120px;
+    border-radius: 30px;
+  }
+
+  .srv_padd {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .srv:hover {
+    background-color: aliceblue;
+  }
+
+  .srv img:hover {
+    width: 130px;
+  }
+
+  .booking {padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 450px;
+  }
+
+  .booking table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .booking input {
+    border-radius: 10px;
+    height: 20px;
+    text-align: center;
+  }
+
+  .booking select {
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+
+  .booking button {
+    width: 190px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #e6ddf5;
+  }
+
+  .booking button:hover {
+    cursor: pointer;
+    background-color: #d5c4ef;
+  }
+
+  .doq {
+    width: 20px;
+  }
+
+  .booking::before {
+    content: "";
+    background: url("rent_vehicle.jpeg") no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    border-radius: 30px;
+  }
+
+  .aboutus {
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: rgb(250, 250, 211);
+    margin: 15px;
+    text-justify: center;
+  }
+
+  .svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: rgb(92, 213, 229);
+  }
+  .svg polygon{
+    position: relative;
+  }
+  .svg polygon:hover{
+    
+    animation: svg 3s ease-in-out  infinite  alternate;
+  }
+ 
+  @keyframes svg {
+    0%{fill:rgb(242, 84, 84);}
+    25%{fill:rgb(244, 244, 62);}
+    50%{fill:rgb(69, 224, 69);}
+    75%{fill:rgb(68, 68, 243);}
+    100%{fill:rgb(226, 58, 58);}
+    
+  }
+  
+  .top{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 32px;
+    height: 40px;
+    font-size: 35px;
+    position: fixed;
+    right: 3rem;
+    bottom: 6rem;
+    text-align: center;
+    background-color: #ee0707;
+    color: black;
+    z-index: 1;
+  }
+
+  .foot {
+    margin: 15px;
+    background-color: rgb(218, 245, 236);
+    border-radius: 15px;
+  }

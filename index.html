@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>skm cars and travels</title>
+
+    <link rel="stylesheet" media="(min-width:588px)"   href="cartravel1.css"/>
+    <link rel="stylesheet" media="(max-width:588px)"   href="cartravel2.css"/>
+   <!-- <link rel="stylesheet"    href="cartravel1.css"/>-->
+
+  </head>
+  <body>
+    <div class="header" id="header">
+      <header class="head" id="head">
+        <div class="logo">
+          <img src="logo.png" alt="logo" />
+          <span class="logoname"><strong>SKM cars and travels</strong></span>
+        </div>
+        <div class="emptycenter"></div>
+        <div class="discount">
+          <p>
+            OFFER: 30 to 35% discount for booking first time. Don't miss it grab
+            it fast
+          </p>
+        </div>
+      </header>
+
+      <nav class="navigation" >
+        <ul>
+          <li><a href="#header" class="navi"> Home</a></li>
+          <li><a href="#services1" class="navi"> Services</a></li>
+          <li><a href="#booking" class="navi">Booking</a></li>
+          <li><a href="#aboutus" class="navi"> About us</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="callus">
+      <img src="call_icon.png" alt="call icon" />
+      <a href="tel:9740458320">call us now</a>
+    </div>
+
+    <section class="front">
+      <p id="frontp">Welecome to SKM cars and travels</p>
+      <p id="front1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe earum
+        placeat culpa repellat voluptate adipisci porro animi temporibus, eos
+        nesciunt.
+      </p>
+    </section>
+
+    <div class="details">
+      <div class="details01">
+        <ul>
+          <li class="details1">112</li>
+          <li class="details1">76</li>
+          <li class="details1">39</li>
+          <li class="details1">43</li>
+          <li class="details1">50</li>
+          <li class="details1">1600k+</li>
+        </ul>
+      </div>
+
+      <div class="details02">
+        <ul>
+          <li class="details2">CARS</li>
+          <li class="details2">DIVERS</li>
+          <li class="details2">BUSES</li>
+          <li class="details2">TTS</li>
+          <li class="details2">CLEANERS</li>
+          <li class="details2">BOOKINGS</li>
+        </ul>
+      </div>
+    </div>
+
+    <h1  id="services1" align="center">OUR SERVICES</h1>
+    <div id="services">
+      <div class="srv_padd">
+        <div class="srv">
+          <img src="rent_a_car.webp" alt="car for rent" />
+          <h3>Rent Car</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Incidunt odit magni et
+            modi obcaecati veniam recusandae
+          </p>
+        </div>
+      </div>
+
+      <div class="srv_padd">
+        <div class="srv">
+          <img src="showroom.jpg" alt="show room" />
+          <h3>Buy Car</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Incidunt odit magni et
+            modi obcaecati veniam recusandae
+          </p>
+        </div>
+      </div>
+
+      <div class="srv_padd">
+        <div class="srv">
+          <img src="buses.jpg" alt="car for rent" />
+          <h3>Buses</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Incidunt odit magni et
+            modi obcaecati veniam recusandae
+          </p>
+        </div>
+      </div>
+
+      <div class="srv_padd">
+        <div class="srv">
+          <img src="tt.jpg" alt="car for rent" />
+          <h3>Tempo Traveller</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Incidunt odit magni et
+            modi obcaecati veniam recusandae
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="booking" id="booking">
+      <h1>Book your Car</h1>
+      <form>
+        <table>
+          <tr>
+            <td><label for="name">Name:</label></td>
+            <td>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your Name"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="phone">Phone Number:</label></td>
+            <td>
+              <input
+                type="phone"
+                id="phone"
+                placeholder="Enter your Phone number"
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="mail">Email:</label></td>
+            <td>
+              <input type="email" id="mail" placeholder="Enter your Email Id" />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="date">Date:</label></td>
+            <td><input type="date" id="date" required /></td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="iniloc">Location: From:</label>
+              <input
+                type="text"
+                id="iniloc"
+                placeholder="Initial location "
+                required
+              />
+            </td>
+            <td>
+              <label for="finloc">To:</label>
+              <input
+                type="text"
+                id="finloc"
+                placeholder="Final location "
+                required
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="vehicle">Select Vehicle: </label></td>
+            <td>
+              <select id="vehicle" required>
+                <option id="car" value="car">Car</option>
+                <option id="bus" value="bus">Bus</option>
+                <option id="tt" value="tt">Tempo Traveller</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="num">Quantity:</label></td>
+            <td><input type="number" min="0" max="20" id="num" required /></td>
+          </tr>
+
+          <tr>
+            <td><label for="doq">Do you require Driver?</label></td>
+            <td>
+              <label for="doq">Yes</label>
+              <input type="radio" class="doq" id="doq1" name="doq" required />
+              <label for="doq">No</label>
+              <input type="radio" class="doq" id="doq2" name="doq" required />
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2">
+              <span
+                >You will be further notified based on availability of car and
+                driver within 2hours of booking.
+              </span>
+            </td>
+          </tr>
+
+          <tr>
+            <td><button value="clear">Clear</button></td>
+            <td><button value="submit">Submit</button></td>
+          </tr>
+        </table>
+      </form>
+    </section>
+
+    <section class="aboutus" id="aboutus">
+      <h1 align="center">About Us</h1>
+      <p>
+        We started our journey since 1995 with only three cars and one bus .
+        Initial days were difficult but after two years of starting we were
+        grown to ten cars and there buses. Today our services are in almost all
+        part of Karnataka and even in some part of Andhra Pradesh, Telengana,
+        Tamil Nadu, Kerala, Maharastra <br />
+        Our main Branch is located in the center of Tumukuru .<br />
+        Reasons for our success is our hardwork,providing good ambeince,
+        maintaining good relation with coustmers.<br />
+        repellat, inventore repudiandae doloremque illum voluptatem sint
+        veritatis quod. Perferendis architecto, atque omnis soluta voluptatum
+        sapiente odit possimus, blanditiis animi alias ullam.
+      </p>
+    </section>
+
+    <section class="svg">
+      <svg width="300" height="300">
+        <polygon class="polygon" points="30,110 200,270 150,50 100,270 270,110 30,220 270,220" />
+        <text x="120" y="185" fill="black">Point me</text>
+      </svg>
+    </section>
+
+    <section class="top">
+      <a href="#header">&uarr;</span>
+    </section>
+
+    <footer class="foot">
+      <span>@ Copyrights reserved </span> &nbsp;&nbsp;&nbsp;
+      <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+      &nbsp;&nbsp;&nbsp;
+      <a href="https://www.instagram.com/" target="_blank">instagram</a>
+    </footer>
+  </body>
+</html>
