@@ -130,29 +130,31 @@
       </div>
     </div>
 
-    <section class="booking" id="booking">
+     <section class="booking" id="booking">
       <h1>Book your Car</h1>
       <form>
         <table>
           <tr>
-            <td><label for="name">Name:</label></td>
+            <td><label for="name">Name:*</label></td>
             <td>
               <input
                 type="text"
                 id="name"
                 placeholder="Enter your Name"
+                title="Enter your Name*"
                 required
               />
             </td>
           </tr>
 
           <tr>
-            <td><label for="phone">Phone Number:</label></td>
+            <td><label for="phone">Phone Number:*</label></td>
             <td>
               <input
                 type="phone"
                 id="phone"
                 placeholder="Enter your Phone number"
+                title="Enter your Phone number*"
                 required
               />
             </td>
@@ -166,20 +168,22 @@
           </tr>
 
           <tr>
-            <td><label for="date">Date:</label></td>
+            <td><label for="date">Date:*</label></td>
             <td><input type="date" id="date" required /></td>
           </tr>
 
           <tr>
-            <td>
-              <label for="iniloc">Location: From:</label>
-              <input
+            <td rowspan="2">
+              <label for="iniloc">Location:* </label>
+            </td>
+             <td> <label for="inloc">From:</label>
+               <input
                 type="text"
                 id="iniloc"
                 placeholder="Initial location "
-                required
-              />
+                required />
             </td>
+            <tr>
             <td>
               <label for="finloc">To:</label>
               <input
@@ -189,10 +193,12 @@
                 required
               />
             </td>
+            </tr>
+
           </tr>
 
           <tr>
-            <td><label for="vehicle">Select Vehicle: </label></td>
+            <td><label for="vehicle">Select Vehicle: *</label></td>
             <td>
               <select id="vehicle" required>
                 <option id="car" value="car">Car</option>
@@ -203,12 +209,12 @@
           </tr>
 
           <tr>
-            <td><label for="num">Quantity:</label></td>
+            <td><label for="num">Quantity:*</label></td>
             <td><input type="number" min="0" max="20" id="num" required /></td>
           </tr>
 
           <tr>
-            <td><label for="doq">Do you require Driver?</label></td>
+            <td><label for="doq">Do you require Driver?*</label></td>
             <td>
               <label for="doq">Yes</label>
               <input type="radio" class="doq" id="doq1" name="doq" required />
@@ -218,21 +224,23 @@
           </tr>
 
           <tr>
-            <td colspan="2">
-              <span
-                >You will be further notified based on availability of car and
-                driver within 2hours of booking.
-              </span>
-            </td>
-          </tr>
-
-          <tr>
             <td><button value="clear">Clear</button></td>
             <td><button value="submit">Submit</button></td>
           </tr>
         </table>
-      </form>
+        </form>
+
+              <span>
+                Areas mentioned with '*' are compulsory
+              </span>
+           
+           
+           <span>
+            You will be further notified based on availability of car and
+                driver within 2hours of booking.
+           </span>
     </section>
+
 
     <section class="aboutus" id="aboutus">
       <h1 align="center">About Us</h1>
